@@ -1,0 +1,49 @@
+.header {
+    display: flex;
+    background-color: $primary-color;
+    color: $second-text-color;
+    padding: 2rem;
+
+    &__branding {
+        flex: 1 1 500px;
+    }
+
+    &__name {
+        font-size: 2.3rem;
+        @include lato-font('bold');
+    }
+
+    &__title {
+        font-size: 1rem;
+        @include lato-font('light');
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &__item {
+        flex: 1;
+        text-align: right;
+        padding: 0 0 0 2rem;
+    }
+
+    &__link {
+        color: $second-text-color;
+        list-style: none;
+        text-decoration: none;
+
+        &:hover {
+            color: $light-color;
+        }
+    }
+
+    &__nav {
+        flex: 2;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}

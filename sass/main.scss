@@ -1,0 +1,23 @@
+@import 'fonts/lato';
+@import "variables";
+@import "header";
+@import "nav";
+@import "main_section";
+@import "footer";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px; 
+    @include lato-font('medium');
+}
+
+.container {
+    padding-left: calc((100vw - 70rem)/2);
+    padding-right: calc((100vw - 70rem)/2);
+}

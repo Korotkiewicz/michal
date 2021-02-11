@@ -1,0 +1,12 @@
+$primary-color: #297aff;
+$dark-color: #3a3a3a;
+$grey-color: #575757;
+$light-color: #c7c7c7;
+$white-color: #fff;
+
+$primary-text-color: $dark-color;
+$second-text-color: $white-color;
+$third-text-color: $light-color;
+
+@include lato-include-font('black');
+@include lato-include-font('medium');

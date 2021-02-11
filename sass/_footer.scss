@@ -1,0 +1,53 @@
+.footer {
+    background-color: $dark-color;
+    color: $third-text-color;
+    display: flex;
+    padding: 3rem;
+    flex-wrap: wrap;
+
+    &__links, &__about {
+        align-items: center;
+        display: flex;
+        flex: 1 1 50%;
+        flex-direction: column;
+        line-height: 2rem;
+    }
+
+    &__title {
+        font-size: 1rem;
+        padding: 0 0 1rem 0;
+        text-transform: uppercase;
+    }
+
+    &__item {
+        
+    }
+    
+    &__link {
+        color: $third-text-color;
+        font-size: 0.9rem;
+        text-decoration: none;
+        @include lato-font('light');
+
+        &:hover {
+            color: $second-text-color;
+        }
+    }
+
+    &__info {
+        font-size: 0.9rem;
+        @include lato-font('light');
+    }
+
+    &__copyright {
+        border-top: 1px solid $grey-color; 
+        font-size: 0.8rem;
+        flex: 1 1 100%;
+        width: 100%;
+        padding: 3rem 0 1rem 0;
+        margin-top: 3rem;
+        text-align: center;
+
+        @include lato-font('hairline');
+    }
+}

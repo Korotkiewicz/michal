@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass": "node-sass sass/main.scss css/style.css --watch"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/Korotkiewicz/michal/issues"
   },
-  "homepage": "https://github.com/Korotkiewicz/michal#readme"
+  "homepage": "https://github.com/Korotkiewicz/michal#readme",
+  "devDependencies": {
+    "lato-font": "^3.0.0",
+    "node-sass": "^5.0.0"
+  }
 }

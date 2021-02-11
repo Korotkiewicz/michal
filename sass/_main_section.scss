@@ -1,0 +1,27 @@
+.main {
+    padding: 2rem 0;
+    display: flex;
+    color: $primary-text-color;
+
+    &__aside {
+        flex: 2;
+    }
+
+    &__info { 
+        flex: 3;
+    }
+
+    .article {
+        &__header {
+            font-size: 3rem;
+            @include lato-font('heavy');
+            padding: 2rem 0;
+        }
+
+        &__text {
+            font-size: 1.2rem;
+            line-height: 2rem;
+            @include lato-font('light');
+        }
+    }
+}
