@@ -227,7 +227,23 @@
   display: flex;
   color: #3a3a3a; }
   .main__aside {
-    flex: 2; }
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; }
+    .main__aside:after {
+      display: block;
+      background: rgba(60, 60, 59, 0.1);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: "";
+      z-index: -1;
+      border-radius: 63% 37% 50% 50%/70% 68% 32% 30%;
+      transform: scale(1.25);
+      left: 40%;
+      bottom: -60px; }
   .main__info {
     flex: 3; }
   .main .article__header {
@@ -244,6 +260,20 @@
     font-family: Lato;
     font-weight: 300;
     font-style: normal; }
+  .main__my-photo {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    border-radius: 50%;
+    background-image: url("/assets/img/mk.jpeg");
+    background-size: cover;
+    transition: ease-in-out .3s;
+    z-index: 2; }
+    .main__my-photo:hover {
+      border-radius: 0.5rem;
+      width: calc(100% - 2rem);
+      height: 20rem;
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(9, 55, 53, 0.08), 0px 16px 24px rgba(9, 55, 53, 0.1), 0px 24px 32px rgba(9, 55, 53, 0.14); }
 
 .footer {
   background-color: #3a3a3a;
