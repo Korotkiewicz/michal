@@ -204,12 +204,19 @@
     flex: 1;
     text-align: right;
     padding: 0 0 0 2rem; }
-  .header__link {
+  .header__brand-link {
     color: #fff;
     list-style: none;
     text-decoration: none; }
+  .header__link {
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    padding: 2rem 1rem;
+    border-radius: 2px 2px; }
     .header__link:hover {
-      color: #c7c7c7; }
+      color: #297aff;
+      background-color: #fff; }
   .header__nav {
     flex: 2;
     display: flex;
@@ -220,12 +227,7 @@
   list-style: none; }
   .nav__link {
     text-decoration: none;
-    text-transform: uppercase;
-    padding: 2rem 1rem;
-    border-radius: 2px 2px; }
-    .nav__link:hover {
-      color: #297aff;
-      background-color: #fff; }
+    text-transform: uppercase; }
 
 .main {
   padding: 2rem 0;

@@ -30,13 +30,23 @@
         padding: 0 0 0 2rem;
     }
 
+    &__brand-link {
+        color: $second-text-color;
+        list-style: none;
+        text-decoration: none;
+    }
+
     &__link {
         color: $second-text-color;
         list-style: none;
         text-decoration: none;
 
+        padding: 2rem 1rem;
+        border-radius: 2px 2px;
+
         &:hover {
-            color: $light-color;
+            color: $success-text-color;
+            background-color: $second-text-color;
         }
     }
 
