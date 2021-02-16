@@ -220,12 +220,16 @@
   list-style: none; }
   .nav__link {
     text-decoration: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding: 2rem 1rem;
+    border-radius: 2px 2px; }
+    .nav__link:hover {
+      color: #297aff;
+      background-color: #fff; }
 
 .main {
   padding: 2rem 0;
-  display: flex;
-  color: #3a3a3a; }
+  display: flex; }
   .main__aside {
     flex: 2;
     display: flex;
@@ -246,32 +250,6 @@
       bottom: -60px; }
   .main__info {
     flex: 3; }
-  .main .article__header {
-    font-size: 3rem;
-    /* Lato (heavy, normal) */
-    font-family: Lato;
-    font-weight: 800;
-    font-style: normal;
-    padding: 2rem 0; }
-  .main .article__text {
-    font-size: 1.2rem;
-    line-height: 2rem;
-    /* Lato (light, normal) */
-    font-family: Lato;
-    font-weight: 300;
-    font-style: normal; }
-  .main .article__buttons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 2rem 0; }
-  .main .article__button {
-    color: #3a3a3a; }
-    .main .article__button--primary {
-      border: 2px solid #3a3a3a; }
-      .main .article__button--primary:hover {
-        background-color: #3a3a3a;
-        color: #fff; }
   .main__my-photo {
     width: 20rem;
     height: 20rem;
@@ -292,6 +270,7 @@
   border-radius: 2rem;
   color: #3a3a3a;
   cursor: pointer;
+  display: inline-block;
   font-size: 0.8rem;
   letter-spacing: 0.2rem;
   padding: 1.2rem 2.5rem;
@@ -300,7 +279,14 @@
   -webkit-transition: background 0.5s;
   -moz-transition: background 0.5s;
   -o-transition: background 0.5s;
-  transition: background 0.5s; }
+  transition: background 0.5s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+  transition-timing-function: ease-in-out; }
+  .button:hover {
+    color: #297aff; }
   .button--primary {
     border: 2px solid #3a3a3a; }
     .button--primary:hover {
@@ -346,6 +332,37 @@
     padding: 2rem 0;
     text-align: center;
     font-size: 1rem; }
+
+.article__header {
+  font-size: 3rem;
+  /* Lato (heavy, normal) */
+  font-family: Lato;
+  font-weight: 800;
+  font-style: normal;
+  padding: 2rem 0; }
+
+.article__text {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  /* Lato (light, normal) */
+  font-family: Lato;
+  font-weight: 300;
+  font-style: normal; }
+
+.article__buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0; }
+
+.article__button {
+  color: #3a3a3a;
+  border-width: 0px; }
+  .article__button--primary {
+    border: 2px solid #3a3a3a; }
+    .article__button--primary:hover {
+      background-color: #3a3a3a;
+      color: #fff; }
 
 .resume {
   display: grid;
@@ -422,8 +439,7 @@
     font-style: normal; }
 
 .question-how {
-  padding: 2rem 0;
-  color: #3a3a3a; }
+  padding: 2rem 0; }
   .question-how__header {
     font-size: 3rem;
     /* Lato (heavy, normal) */
@@ -447,13 +463,42 @@
     text-align: center; }
   .question-what__columns {
     padding-top: 2rem; }
+  .question-what__resume-text {
+    font-size: 3rem;
+    /* Lato (heavy, normal) */
+    font-family: Lato;
+    font-weight: 800;
+    font-style: normal;
+    padding: 2rem 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 0 0 2rem 0; }
   .question-what__button {
-    color: #297aff; }
+    color: #fff;
+    letter-spacing: 0.3rem;
+    padding: 1rem 2rem; }
     .question-what__button--primary {
+      color: #297aff;
       border: 2px solid #297aff; }
       .question-what__button--primary:hover {
-        background-color: #3a3a3a;
-        color: #fff; }
+        background-color: #297aff;
+        color: #3a3a3a; }
+
+.contact {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .contact__header {
+    flex: 1;
+    font-size: 3rem;
+    /* Lato (heavy, normal) */
+    font-family: Lato;
+    font-weight: 800;
+    font-style: normal;
+    padding: 2rem 0;
+    text-align: center; }
 
 * {
   margin: 0;
@@ -462,6 +507,7 @@
 
 body {
   font-size: 20px;
+  color: #3a3a3a;
   /* Lato (medium, normal) */
   font-family: "Lato Medium";
   font-weight: 400;

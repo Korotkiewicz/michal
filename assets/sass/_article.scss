@@ -1,0 +1,30 @@
+.article {
+    &__header {
+        @include header;
+    }
+
+    &__text {
+        @include text;
+    }
+
+    &__buttons {
+        display: flex; 
+        justify-content: space-around;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+    &__button {
+        color: $primary-text-color;
+        border-width: 0px;
+        
+        &--primary {
+            border: 2px solid $primary-text-color;
+
+            &:hover {
+                background-color: $primary-text-color;
+                color: $second-text-color;
+            }
+        }
+    }
+}

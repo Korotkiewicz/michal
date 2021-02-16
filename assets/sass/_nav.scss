@@ -7,5 +7,12 @@
     &__link {
         text-decoration: none;
         text-transform: uppercase;
+        padding: 2rem 1rem;
+        border-radius: 2px 2px;
+
+        &:hover {
+            color: $success-text-color;
+            background-color: $second-text-color;
+        }
     }
 }

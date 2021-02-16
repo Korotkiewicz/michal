@@ -1,7 +1,6 @@
 .main {
     padding: 2rem 0;
     display: flex;
-    color: $primary-text-color;
 
     &__aside {
         flex: 2;
@@ -27,36 +26,6 @@
 
     &__info { 
         flex: 3;
-    }
-
-    .article {
-        &__header {
-            @include header;
-        }
-
-        &__text {
-            @include text;
-        }
-
-        &__buttons {
-            display: flex; 
-            justify-content: space-around;
-            align-items: center;
-            margin: 2rem 0;
-        }
-
-        &__button {
-            color: $primary-text-color;
-            
-            &--primary {
-                border: 2px solid $primary-text-color;
-
-                &:hover {
-                    background-color: $primary-text-color;
-                    color: $second-text-color;
-                }
-            }
-        }
     }
 
     &__my-photo {

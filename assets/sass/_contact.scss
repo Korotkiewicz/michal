@@ -1,0 +1,17 @@
+.contact {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+
+    &__header {
+        flex: 1;
+        @include header;
+        text-align: center;
+    }
+
+    &__info {
+
+    }
+}
