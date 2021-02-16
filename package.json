@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile-sass": "node-sass assets/sass/main.scss assets/css/style.css --watch"
+    "compile-sass": "node-sass assets/sass/main.scss assets/css/style.css --watch",
+    "postinstall": "cp node_modules/@fortawesome/fontawesome-free/js/fontawesome.min.js ./assets/js/ && cp node_modules/@fortawesome/fontawesome-free/js/brands.min.js ./assets/js/ && cp node_modules/@fortawesome/fontawesome-free/js/solid.min.js ./assets/js/"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
   "devDependencies": {
     "lato-font": "^3.0.0",
     "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2"
   }
 }

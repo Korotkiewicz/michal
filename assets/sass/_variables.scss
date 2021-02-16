@@ -8,5 +8,17 @@ $primary-text-color: $dark-color;
 $second-text-color: $white-color;
 $third-text-color: $light-color;
 
-@include lato-include-font('black');
-@include lato-include-font('medium');
+@include lato-include-font("black");
+@include lato-include-font("medium");
+
+@mixin header {
+  font-size: 3rem;
+  @include lato-font("heavy");
+  padding: 2rem 0;
+}
+
+@mixin text {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  @include lato-font("light");
+}

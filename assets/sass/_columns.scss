@@ -1,0 +1,40 @@
+.columns {
+    display: flex;
+    justify-content: space-between;
+
+    &__column {
+        flex: 1;
+        padding: 0 1.5rem;
+
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            padding-right: 0;
+        }
+
+        &--three-times-wider {
+            flex: 3; 
+        }
+
+        &--four-times-wider {
+            flex: 4; 
+        }
+    }
+
+    &__header {
+        @include header;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    &__text {
+        @include text;
+    }
+
+    &__footer {
+        @include header;
+        text-align: center;
+        font-size: 1rem;
+    }
+}

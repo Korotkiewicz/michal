@@ -4,65 +4,233 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/assets/css/style.css">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <header class="header container">
-            <div class="header__branding">
-                <h1 class="header__name">
-                    <a class="header__link" href="/">Michał Korotkiewicz</a>
-                </h1>
-                <h2 class="header__title">programowanie, zarządzanie, prowadzenie</h2>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script defer src="/assets/js/brands.min.js"></script>
+    <script defer src="/assets/js/solid.min.js"></script>
+    <script defer src="/assets/js/fontawesome.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <header class="header container">
+      <div class="header__branding">
+        <h1 class="header__name">
+          <a class="header__link" href="/">Michał Korotkiewicz</a>
+        </h1>
+        <h2 class="header__title">programowanie, zarządzanie, prowadzenie</h2>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__list nav">
+          <li class="nav__item header__item">
+            <a class="header__link nav__link" href="#omnie">O mnie</a>
+          </li>
+          <li class="nav__item header__item">
+            <a class="header__link nav__link" href="#kontakt">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="main container">
+      <aside class="main__aside">
+        <figure class="main__my-photo"></figure>
+      </aside>
+      <article class="main__info article">
+        <h2 class="article__header">
+          Chcesz zbudować niezawodną aplikację? Dobrze trafiłeś!
+        </h2>
+        <p class="article__text">
+          Cześć, nazywam się <strong>Michał Korotkiewicz</strong> i jestem z
+          wykrztałcenia programistą. Od ponad
+          <span id="experience-duration">dziesięciu</span> lat pomagam małym i
+          dużym firmom w tworzeniu aplikacji.
+        </p>
+        <div class="article__buttons">
+          <botton class="article__button button article__button--primary"
+            >Zatrudnij mnie</botton
+          >
+          <a
+            class="article__button button article__button--transparent"
+            href="mailto:korotm@gmail.com"
+            ><i class="fas fa-paper-plane" aria-hidden="true"></i>
+            &nbsp;Skontaktuj się</a
+          >
+        </div>
+      </article>
+    </section>
+
+    <section class="question-how container">
+      <h3 class="question-how__header">Jak mogę Ci pomóc?</h3>
+      <div class="question-how__columns columns">
+        <div class="columns__column">
+          <h4 class="columns__header">Współpraca B2B</h4>
+          <div class="columns__text">
+            Jeśli szukasz programisty to dobrze trafiłeś. Jestem otwarty na
+            rozpoczęcie współpracy na niepełny wymiar pracy jako Fullstack
+            PHP/JS Developer. Jeśli odpowiada Ci współpraca na 3/4 lub 4/5 etatu
+            to przejdź niżej.
+          </div>
+        </div>
+        <div class="columns__column">
+          <h4 class="columns__header">Stworzenie aplikacji</h4>
+          <div class="columns__text">
+            Masz pomysł na aplikację internetową lub mobilną. Masz konkretny
+            problem, który chcesz rozwiązać? Jako przedstawiciel spółki BW dev
+            możemy wspólnie wymyślić optymalne rozwiązanie dla Twojego biznesu.
+          </div>
+        </div>
+        <div class="columns__column">
+          <h4 class="columns__header">Wsparcie i utrzymanie</h4>
+          <div class="columns__text">
+            Masz stronę internetową lub aplikację mobilną, która wymaga
+            odświeżnia lub naprawy? Posiadam wieloletnie doświadczenie w tej
+            dziedzinie. Przejdź przejdź niżej.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="question-what container">
+      <h3 class="question-what__header">Co i jak długo robię?</h3>
+      <div class="question-what__columns columns">
+        <div class="columns__column">
+          <div class="columns__text">
+            Dziękuję Ci że dotarłeś do tej sekcji mojej strony. Z wykrztałcenia
+            i z zawoduj jestem programistą ale również posiadam doświadczenie
+            jako Team Leader oraz Project Manager. Od pewnego czasu próbuję
+            swoich sił również jako prezes małego software housu BW dev. Tutaj
+            znajdziesz moje resume →
+          </div>
+          <div class="columns__footer">
+            Potrzebujesz formy papierowej? Pobierz PDF
+            <a class="question-what__button button" href="#" attachment>Pobierz CV</a>
+          </div>
+        </div>
+        <div class="columns__column columns__column--three-times-wider">
+          <div class="resume">
+            <div class="resume__log">
+              <div class="resume__date">Czerwiec 2019 - obecnie</div>
+              <div class="resume__job-title">Prezes</div>
+              <div class="resume__company">BW dev sp. z o.o.</div>
             </div>
-            <nav class="header__nav">
-                <ul class="header__list nav">
-                    <li class="nav__item header__item"><a class="header__link nav__link" href="#omnie">O mnie</a></li>
-                    <li class="nav__item header__item"><a class="header__link nav__link" href="#kontakt">Kontakt</a></li>
-                </ul>
-            </nav>    
-        </header>
-        
-        <section class="main container">
-            <aside class="main__aside">
-                <figure class="main__my-photo"> 
-                </figure>
-            </aside>
-            <article class="main__info article">
-                <h2 class="article__header">Chcesz zbudować niezawodną aplikację? Dobrze trafiłeś!</h2>
-                <p class="article__text">Cześć, nazywam się <strong>Michał Korotkiewicz</strong> i jestem z wykrztałcenia programistą. Od ponad <span id="experience-duration">dziesięciu</span> lat pomagam małym i dużym firmom w tworzeniu aplikacji.</p>
-                <div class="article__buttons">
-                    <botton class="article__button article__button--primary">Zatrudnij mnie</botton>
-                </div>
-            </article>
-        </section>
+            <div class="resume__log">
+              <div class="resume__date">Październik 2017 - Kwiecień 2021</div>
+              <div class="resume__job-title">
+                IT Project Manager / Senior PHP developer
+              </div>
+              <div class="resume__company">
+                Polskie Szkoły Internetowe Libratus
+              </div>
+            </div>
+            <div class="resume__log">
+              <div class="resume__date">Październik 2014 - Wrzesień 2017</div>
+              <div class="resume__job-title">
+                Team Leader IT / Senior PHP developer
+              </div>
+              <div class="resume__company">
+                Polskie Szkoły Internetowe Libratus
+              </div>
+            </div>
+            <div class="resume__log">
+              <div class="resume__date">Październik 2010 - Wrzesień 2014</div>
+              <div class="resume__job-title">PHP developer</div>
+              <div class="resume__company">
+                Polskie Szkoły Internetowe Libratus
+              </div>
+            </div>
+            <div class="resume__log">
+              <div class="resume__date">Luty 2010 – Kwiecień 2010</div>
+              <div class="resume__job-title">Junior PHP developer</div>
+              <div class="resume__company">Someday Interaktive</div>
+            </div>
+            <div class="resume__log">
+              <div class="resume__date">Styczeń 2009 – Wrzesień 2010</div>
+              <div class="resume__job-title">Freelancer - PHP/JS</div>
+              <div class="resume__company">-</div>
+            </div>
+            <div class="resume__log">
+              <div class="resume__date">Sierpień – Listopad 2008</div>
+              <div class="resume__job-title">Praktykant - PHP</div>
+              <div class="resume__company">PLUS SOLUTIONS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <footer class="footer container">
-            <section class="footer__links">
-                <h3 class="footer__title">Linki</h3>
-                <nav class="footer__nav">
-                    <ul class="footer__list nav">
-                        <li class="nav__item footer__item"><a class="footer__link nav__link" href="#omnie">O mnie</a></li>
-                        <li class="nav__item footer__item"><a class="footer__link nav__link" href="#kontakt">Kontakt</a></li>
-                    </ul>
-                </nav>  
-            </section>
-            <section class="footer__about">
-                <h3 class="footer__title">Kim jestem?</h3>
-                <p class="footer__info">Nazywam się <strong>Michał Korotkiewicz</strong> i&nbsp;zarabiam na życie wytwarzaniem aplikacji internetowych i&nbsp;mobilnych. Jestem Fullstack PHP/JS deweloperem, Team Leaderem, Project Managerem oraz prowadzę software house <a class="footer__link" href="https://bwdev.pl">BW dev</a>.</p>
-                <p class="footer__info">Wśród moich klientów są <a class="footer__link" href="https://www.libratus.edu.pl" rel="nofollow">Polskie Szkoły Internetowe Libratus</a>, <a class="footer__link" href="https://www.polonijka.edu.pl" rel="nofollow">Polonijna Szkoła Podstawowa Polonijka</a>, <a class="footer__link" href="https://www.domowi.edu.pl" rel="nofollow">Centrum Nauczania Domowego</a>, <a class="footer__link" href="https://www.polonia.edu.pl" rel="nofollow">Fundacja Edukacji Polonijnej FEP</a>, <a class="footer__link" href="https://www.krach.pl" rel="nofollow">Kancelaria Rachunkowa Krach</a>, <a class="footer__link" href="https://www.iflsa.pl" rel="nofollow">Internetowy fundusz leasingowy IFLsa</a> i więcej...</p>
-            </section>
-            <div class="footer__copyright">&copy; <span id="current-year">2021</span> by Michał Korotkiewicz</div>
-        </footer>
+    <footer class="footer container">
+      <section class="footer__links">
+        <h3 class="footer__title">Linki</h3>
+        <nav class="footer__nav">
+          <ul class="footer__list nav">
+            <li class="nav__item footer__item">
+              <a class="footer__link nav__link" href="#omnie">O mnie</a>
+            </li>
+            <li class="nav__item footer__item">
+              <a class="footer__link nav__link" href="#kontakt">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="footer__about">
+        <h3 class="footer__title">Kim jestem?</h3>
+        <p class="footer__info">
+          Nazywam się <strong>Michał Korotkiewicz</strong> i&nbsp;zarabiam na
+          życie wytwarzaniem aplikacji internetowych i&nbsp;mobilnych. Jestem
+          Fullstack PHP/JS deweloperem, Team Leaderem, Project Managerem oraz
+          prowadzę software house
+          <a class="footer__link" href="https://bwdev.pl">BW dev</a>.
+        </p>
+        <p class="footer__info">
+          Wśród moich klientów są
+          <a
+            class="footer__link"
+            href="https://www.libratus.edu.pl"
+            rel="nofollow"
+            >Polskie Szkoły Internetowe Libratus</a
+          >,
+          <a
+            class="footer__link"
+            href="https://www.polonijka.edu.pl"
+            rel="nofollow"
+            >Polonijna Szkoła Podstawowa Polonijka</a
+          >,
+          <a
+            class="footer__link"
+            href="https://www.domowi.edu.pl"
+            rel="nofollow"
+            >Centrum Nauczania Domowego</a
+          >,
+          <a
+            class="footer__link"
+            href="https://www.polonia.edu.pl"
+            rel="nofollow"
+            >Fundacja Edukacji Polonijnej FEP</a
+          >,
+          <a class="footer__link" href="https://www.krach.pl" rel="nofollow"
+            >Kancelaria Rachunkowa Krach</a
+          >,
+          <a class="footer__link" href="https://www.iflsa.pl" rel="nofollow"
+            >Internetowy fundusz leasingowy IFLsa</a
+          >
+          i więcej...
+        </p>
+      </section>
+      <div class="footer__copyright">
+        &copy; <span id="current-year">2021</span> by Michał Korotkiewicz
+      </div>
+    </footer>
 
-        <script src="/assets/js/main.js" async defer></script>
-    </body>
+    <script src="/assets/js/main.js" async defer></script>
+  </body>
 </html>

@@ -1,0 +1,9 @@
+.question-how {
+    padding: 2rem 0;
+    color: $primary-text-color;
+
+    &__header {
+        @include header;
+        text-align: center;
+    }
+}
