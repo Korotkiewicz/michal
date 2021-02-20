@@ -6,3 +6,9 @@
         text-align: center;
     }
 }
+
+@media (max-width: $mediaMobileLandscapeWidth) { 
+    .question-how {
+        padding: 1rem 0;
+    }
+}

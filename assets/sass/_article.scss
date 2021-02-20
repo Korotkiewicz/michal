@@ -28,3 +28,16 @@
         }
     }
 }
+
+@media (max-width: $mediaMobileMiddleWidth) {
+    .article {
+        &__buttons {
+            flex-direction: column;
+            margin: 0;
+        }
+
+        &__button {
+            margin-top: 2rem;
+        }
+    }
+}

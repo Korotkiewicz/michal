@@ -23,3 +23,11 @@ $success-text-color: $primary-color;
   line-height: 2rem;
   @include lato-font("light");
 }
+
+$mediaVeryWideWidth: 2000px;
+$mediaWideWidth: 1430px;
+$mediaMediumWidth: 1320px;
+$mediaHDWidth: 1110px;
+$mediaTabletWidth: 885px;
+$mediaMobileLandscapeWidth: 768px;
+$mediaMobileMiddleWidth: 450px;

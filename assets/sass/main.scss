@@ -19,8 +19,11 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 25px;
+}
+
 body {
-    font-size: 20px; 
     color: $primary-text-color;
     @include lato-font('medium');
 }
@@ -28,4 +31,39 @@ body {
 .container {
     padding-left: calc((100vw - 70rem)/2);
     padding-right: calc((100vw - 70rem)/2);
+}
+
+@media (max-width: $mediaVeryWideWidth) {
+    html {
+        font-size: 18px; 
+    }
+}
+
+@media (max-width: $mediaWideWidth) {
+    html {
+        font-size: 17px; 
+    }
+}
+
+@media (max-width: $mediaMediumWidth) {
+    html {
+        font-size: 15px; 
+    }
+}
+
+@media (max-width: $mediaHDWidth) {
+    html {
+        font-size: 12px; 
+    }
+}
+
+@media (max-width: $mediaTabletWidth) {
+    html {
+        font-size: 10px; 
+    }
+
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }

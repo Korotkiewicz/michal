@@ -1,6 +1,8 @@
 .main {
     padding: 2rem 0;
     display: flex;
+    justify-content: center;
+    align-items: stretch;
 
     &__aside {
         flex: 2;
@@ -51,4 +53,16 @@
 
         
     }
+}
+
+@media (max-width: $mediaMobileLandscapeWidth) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        &__aside:after {
+            display:none;
+        }
+    } 
 }

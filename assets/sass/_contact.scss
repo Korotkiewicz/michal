@@ -1,17 +1,55 @@
 .contact {
     padding: 2rem 0;
     display: flex;
-    flex-direction: column; 
     justify-content: center;
-    align-items: center;
+    align-items: begin;
+    flex-wrap: wrap;
 
     &__header {
-        flex: 1;
+        flex: 1 1 100%;
         @include header;
         text-align: center;
     }
 
-    &__info {
-
+    &__aside {
+        flex: 3;
     }
+
+    &__info {
+        flex: 1;
+    }
+
+    &__form {
+        min-width: 100%;
+        height: 710px;
+    }
+
+    &__buttons {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    &__button {
+        padding-left: 0;
+        padding-right: 0; 
+    }
+}
+
+@media (max-width: $mediaMobileLandscapeWidth) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        &__aside {
+            width: 100%;
+        }
+
+        &__form {
+            transform: scale(0.75, 0.75);
+            transform-origin: 0 0;
+            width: 128vw;
+            margin-bottom: -190px;
+        }
+    } 
 }

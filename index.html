@@ -7,14 +7,15 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>Michał Korotkiewicz - Full-Stack PHP/JS developer</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css?v=1.1.1" />
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script defer src="/assets/js/brands.min.js"></script>
     <script defer src="/assets/js/solid.min.js"></script>
     <script defer src="/assets/js/fontawesome.min.js"></script>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png"/>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -54,13 +55,13 @@
         </h2>
         <p class="article__text">
           Cześć, nazywam się <strong>Michał Korotkiewicz</strong> i jestem z
-          wykrztałcenia programistą. Od ponad
+          wykształcenia programistą. Od ponad
           <span id="experience-duration">dziesięciu</span> lat pomagam małym i
           dużym firmom w tworzeniu aplikacji.
         </p>
         <div class="article__buttons">
-          <botton class="article__button button article__button--primary"
-            >Zatrudnij mnie</botton
+          <a class="article__button button article__button--primary" href="mailto:korotm@gmail.com?subject=Oferta pracy&body=Cześć Michał,%0D%0A%0D%0Achcielibyśmy nawiązać z Tobą współpracę..."
+            >Zatrudnij mnie</a
           >
           <a
             class="article__button button article__button--transparent"
@@ -78,18 +79,18 @@
         <div class="columns__column">
           <h4 class="columns__header">Współpraca B2B</h4>
           <div class="columns__text">
-            Jeśli szukasz programisty to dobrze trafiłeś. Jestem otwarty na
-            rozpoczęcie współpracy na niepełny wymiar pracy jako Fullstack
-            PHP/JS Developer. Jeśli odpowiada Ci współpraca na 3/4 lub 4/5 etatu
+            Jeśli szukasz programisty, to dobrze trafiłeś. Jestem otwarty na
+            rozpoczęcie współpracy w niepełnym wymiarze godzin jako Full-Stack
+            PHP/JS Developer. Jeśli odpowiada Ci współpraca na 3/4 lub 4/5 etatu,
             to przejdź niżej.
           </div>
         </div>
         <div class="columns__column">
           <h4 class="columns__header">Stworzenie aplikacji</h4>
           <div class="columns__text">
-            Masz pomysł na aplikację internetową lub mobilną. Masz konkretny
+            Masz pomysł na aplikację internetową lub mobilną? Masz konkretny
             problem, który chcesz rozwiązać? Jako przedstawiciel spółki BW dev
-            możemy wspólnie wymyślić optymalne rozwiązanie dla Twojego biznesu.
+            mogę wspólnie z Tobą wymyślić optymalne rozwiązanie dla Twojego biznesu.
           </div>
         </div>
         <div class="columns__column">
@@ -97,7 +98,7 @@
           <div class="columns__text">
             Masz stronę internetową lub aplikację mobilną, która wymaga
             odświeżnia lub naprawy? Posiadam wieloletnie doświadczenie w tej
-            dziedzinie. Przejdź przejdź niżej.
+            dziedzinie. Przejdź niżej.
           </div>
         </div>
       </div>
@@ -108,11 +109,11 @@
       <div class="question-what__columns columns">
         <div class="columns__column">
           <div class="columns__text">
-            Dziękuję Ci że dotarłeś do tej sekcji mojej strony. Z wykrztałcenia
-            i z zawoduj jestem programistą ale również posiadam doświadczenie
+            Dziękuję Ci, że dotarłeś do tej sekcji mojej strony. Z wykształcenia
+            i z zawodu jestem programistą, ale również posiadam doświadczenie
             jako Team Leader oraz Project Manager. Od pewnego czasu próbuję
-            swoich sił również jako prezes małego software housu BW dev. Tutaj
-            znajdziesz moje resume →
+            swoich sił również jako prezes małego software house-u BW dev. <span class="resume__direction">Tutaj
+            są informacje o&nbsp;moim doświadczeniu →</span>
           </div>
           <div class="columns__footer">
             <p class="question-what__resume-text">
@@ -120,8 +121,9 @@
             </p>
             <a
               class="question-what__button question-what__button--primary button"
-              href="javascript:alert('W trakcie przygotowania...');"
-              attachment
+              href="/assets/cv/MKorotkiewicz_CV_2021_v1.0.0.pdf"
+              download
+              target="_blank"
               >Pobierz CV PDF</a
             >
           </div>
@@ -179,24 +181,27 @@
     </section>
 
     <section class="contact container">
+      <h3 id="contact" class="contact__header article__header">Kontakt</h3>
+      <aside class="contact__aside">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevNsyWtxUh1HwJmmP_-Q2mjsAP6pwNh1G3y3uao13-wjiCMQ/viewform?embedded=true" class="contact__form" frameborder="0" marginheight="0" marginwidth="0">Ładuję…</iframe>
+      </aside>
       <article class="contact__info article">
-        <h3 id="contact" class="contact__header article__header">Kontakt</h3>
-        <div class="article__buttons">
+        <div class="article__buttons contact__buttons">
           <a
-            class="article__button button article__button--transparent show-phone-number"
+            class="article__button contact__button button article__button--transparent show-phone-number"
             data-phone="+48 602-193-108"
           >
             <i class="fas fa-phone-alt" aria-hidden="true"></i> &nbsp;<span
               class="replace"
-              >numer telefonu: +48 Pokaż</span
+              > +48 Pokaż</span
             >
           </a>
           <a
-            class="article__button button article__button--transparent show-email-address"
+            class="article__button contact__button button article__button--transparent show-email-address"
             data-email="korotm@gmail.com"
           >
             <i class="fas fa-paper-plane" aria-hidden="true"></i> &nbsp;
-            <span class="replace">adres email: Pokaż </span>
+            <span class="replace">email: Pokaż </span>
           </a>
         </div>
       </article>
@@ -221,7 +226,7 @@
         <p class="footer__info">
           Nazywam się <strong>Michał Korotkiewicz</strong> i&nbsp;zarabiam na
           życie wytwarzaniem aplikacji internetowych i&nbsp;mobilnych. Jestem
-          Fullstack PHP/JS deweloperem, Team Leaderem, Project Managerem oraz
+          Full-Stack PHP/JS developerem, Team Leaderem, Project Managerem oraz
           prowadzę software house
           <a class="footer__link" href="https://bwdev.pl">BW dev</a>.
         </p>
@@ -235,18 +240,6 @@
           >,
           <a
             class="footer__link"
-            href="https://www.polonijka.edu.pl"
-            rel="nofollow"
-            >Polonijna Szkoła Podstawowa Polonijka</a
-          >,
-          <a
-            class="footer__link"
-            href="https://www.domowi.edu.pl"
-            rel="nofollow"
-            >Centrum Nauczania Domowego</a
-          >,
-          <a
-            class="footer__link"
             href="https://www.polonia.edu.pl"
             rel="nofollow"
             >Fundacja Edukacji Polonijnej FEP</a
@@ -256,7 +249,19 @@
           >,
           <a class="footer__link" href="https://www.iflsa.pl" rel="nofollow"
             >Internetowy fundusz leasingowy IFLsa</a
-          >
+          >,
+          <a
+            class="footer__link"
+            href="https://dawiduczy.pl"
+            rel="nofollow"
+            >Dawid Uczy</a
+          >,
+          <a
+            class="footer__link"
+            href="https://elpisonline.pl"
+            rel="nofollow"
+            >Elpis Online</a
+          >,
           i więcej...
         </p>
       </section>

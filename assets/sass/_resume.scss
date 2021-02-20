@@ -1,27 +1,45 @@
 .resume {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: column dense;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 
-    &__log {
-        padding-bottom: 1.5rem;
+  &__log {
+    padding-bottom: 1.5rem;
+  }
+
+  &__date {
+    @include header;
+    color: $success-text-color;
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+  }
+
+  &__job-title {
+    font-size: 1rem;
+    padding: 0.4rem 0;
+  }
+
+  &__company {
+    @include text;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: $mediaMobileLandscapeWidth) {
+  .resume__direction {
+    display: none;
+  }
+}
+
+@media (max-width: $mediaMobileMiddleWidth) {
+  .resume {
+    grid-template-columns: 1fr;
+
+    &__direction {
+      display: none;
     }
-
-    &__date {
-        @include header;
-        color: $success-text-color;
-        letter-spacing: 0.2rem;
-        font-size: 0.8rem;
-        padding: 0.5rem 0;
-        text-transform: uppercase;
-    } 
-
-    &__job-title {
-        font-size: 1rem;
-        padding: 0.4rem 0;
-    }
-
-    &__company {
-        @include text;
-        font-size: 0.9rem;
-    }
+  }
 }

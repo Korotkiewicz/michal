@@ -5,6 +5,10 @@
     padding: 3rem;
     flex-wrap: wrap;
 
+    &__list {
+        text-align: center;
+    }
+
     &__links, &__about {
         align-items: center;
         display: flex;
@@ -50,4 +54,15 @@
 
         @include lato-font('hairline');
     }
+}
+
+@media (max-width: $mediaMobileLandscapeWidth) {
+    .footer {
+        flex-direction: column;
+        align-content: space-between;
+
+        &__about {
+            padding-top: 2rem;
+        }
+    } 
 }

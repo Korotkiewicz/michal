@@ -35,3 +35,11 @@
     }
   }
 }
+
+@media (max-width: $mediaMobileLandscapeWidth) {
+  .question-what {
+    &__columns {
+      flex-direction: column-reverse;
+    }
+  }
+}
