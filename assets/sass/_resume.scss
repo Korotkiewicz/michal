@@ -4,6 +4,8 @@
   grid-auto-flow: column dense;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 
+  padding-left: 4rem;
+
   &__log {
     padding-bottom: 1.5rem;
   }
@@ -29,6 +31,10 @@
 }
 
 @media (max-width: $mediaMobileLandscapeWidth) {
+  .resume {
+      padding-left: 0;
+  }
+  
   .resume__direction {
     display: none;
   }
